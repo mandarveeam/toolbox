@@ -79,4 +79,12 @@ WORKDIR /home/toolbox
 
 EXPOSE 7681
 
-CMD ["ttyd", "-W", "-p", "7681", "-t", "fontSize=22", "bash"]
+CMD [
+    "ttyd",
+    "-W",
+    "-p","7681",
+    "-t","fontSize=22",
+    "-t","cursorBlink=true",
+    "-t","rendererType=webgl",
+    "bash"
+]
